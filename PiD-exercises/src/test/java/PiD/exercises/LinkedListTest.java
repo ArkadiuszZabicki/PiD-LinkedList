@@ -21,5 +21,18 @@ public class LinkedListTest {
 		
 		assertEquals(true, success);
 	}
+	
+	@Test
+	
+	public void testGetOnListWithNode() {
+		LinkedList list = new LinkedList();
+		list.add(2);
+		list.add(8);
+		list.add(1);
+		
+		assertEquals(2, list.get(0));
+		assertEquals(1, list.get(2));
+		assertEquals(8, list.get(1));
+	}
 
 }
